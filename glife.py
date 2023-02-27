@@ -1,5 +1,5 @@
 #glife 
-generations = 5
+generations = 10
 
 
 def count_neighbours(r, c, alive_nodes):
@@ -28,7 +28,8 @@ def run_life(alive_nodes):
 
 
 def run():
-  alive_nodes = {(10000000000, 1), (10000000000, 2), (10000000000, 3)}
+  #alive_nodes = {(10000000000, 1), (10000000000, 2), (10000000000, 3)}
+  alive_nodes = {(0, 1), (1, 2), (2, 0), (2, 1), (2, 2), (-2000000000000, -2000000000000), (-2000000000001, -2000000000001), (-2000000000000, -2000000000001)}
   run_life(alive_nodes)
 
 
